@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>BOOTSTRAP & SCSS BEM STARTER</title>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <h2 class="text-center">Movies Catalog</h2>
+    <div class="col-4">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="ave" id="text" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="5" id="exampleInputPassword1">
+        </div>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>All</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <select class="form-select mt-3"  aria-label="Default select example">
+          <option selected>Rating (high to low)</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <button type="button" class="btn btn-primary w-100 mt-3">Primary</button>
+      </form>
+      <h2 class="mt-4">Bookmarked movies</h2>
+      <div class="border p-2">
+        <h6 class="mr-3">Avangers: Infinity war</h6>
+        <button type="button" class="btn btn-danger">Remove</button>
+
+      </div>
+      <div class="border p-2">
+        <h6 class="mr-3">The avangers</h6>
+        <button type="button" class="btn btn-danger">Remove</button>
+      </div>
+      <div class="border p-2">
+        <h6 class="mr-3">12 years a slave</h6>
+        <button type="button" class="btn btn-danger">Remove</button>
+      </div>
+    </div>
+    <div class="col-8">
+      <h5>Search reslut 39</h5>
+      <div class="alert alert-success" role="alert">
+        Use the form on the left to search for a movie
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 g-4 ms-5">
+        <div class="col w-50">
+          <div class="card">
+            <img src="./img/avangers.jpg" class="card-img-top" alt="avangers">
+            <div class="card-body">
+              <h5 class="card-title">Avangers: Infinity war</h5>
+              <img src="./img/movies.svg" alt="" width="20" height="20">
+              <span>2018</span>
+              <div class="mt-4">
+                <img src="./img/star.png" alt="" width="25" height="25">
+                <span class="m-0 p-0 ">8.7</span>
+              </div>
+      
+              <div class="d-flex mt-3">
+                <button class="btn btn-outline-primary">Watch tariler</button>
+                <button class="btn btn-outline-primary ms-3">more info</button>
+                <button class="btn btn-outline-primary ms-3">Bookmark</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col w-50">
+          <div class="card">
+            <img src="./img/avengers2012.jpeg" class="card-img-top" alt="avengers2012">
+            <div class="card-body">
+              <h5 class="card-title">The avangers</h5>
+              <img src="./img/movies.svg" alt="" width="20" height="20">
+              <span>2012</span>
+              <div class="mt-4">
+                <img src="./img/star.png" alt="" width="25" height="25">
+                <span class="m-0 p-0 ">8.1</span>
+              </div>
+      
+              <div class="d-flex mt-3">
+                <button class="btn btn-outline-primary">Watch tariler</button>
+                <button class="btn btn-outline-primary ms-3">more info</button>
+                <button class="btn btn-outline-primary ms-3">Bookmark</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="btn-toolbar mb-3 mt-4 justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group me-2" role="group" aria-label="First group">
+        <button type="button" class="btn btn-outline-secondary">1</button>
+        <button type="button" class="btn btn-outline-secondary">2</button>
+        <button type="button" class="btn btn-outline-secondary">3</button>
+        <button type="button" class="btn btn-outline-secondary">4</button>
+      </div>
+  </div>
+</div>
+
+
+  <script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>
